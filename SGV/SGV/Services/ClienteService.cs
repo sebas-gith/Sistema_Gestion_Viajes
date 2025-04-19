@@ -11,8 +11,8 @@ namespace SGV.Services
 {
     class ClienteService : IClienteService
     {
-        private readonly IClienteRespository _clienteRepository;
-        public ClienteService(IClienteRespository clienteRepository)
+        private readonly IClienteRepository _clienteRepository;
+        public ClienteService(IClienteRepository clienteRepository)
         {
             _clienteRepository = clienteRepository;
         }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SGV.Interfaces
 {
-    interface IClienteRespository
+    interface IClienteRepository
     {
         public void Insertar(Cliente cliente);
         public void Actualizar(int Id, Cliente cliente);

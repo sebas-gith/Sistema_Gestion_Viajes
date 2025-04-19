@@ -8,11 +8,11 @@ using System.Reflection;
 
 namespace SGV.Repositories
 {
-    public class ClienteRespository : IClienteRespository
+    public class ClienteRepository : IClienteRepository
     {
         private readonly string _connectionString;
 
-        public ClienteRespository()
+        public ClienteRepository()
         {
             _connectionString = AppSettings.DBstring;
         }
