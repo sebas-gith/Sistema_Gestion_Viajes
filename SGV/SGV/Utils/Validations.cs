@@ -56,5 +56,35 @@ namespace SGV.Utils
 
  
         }
+        public static void SonLosDatosDeTransporteValidos(Transporte transporte)
+        {
+            if (string.IsNullOrWhiteSpace(transporte.Tipo))
+                throw new ArgumentException("El tipo es obligatorio.");
+            if (string.IsNullOrWhiteSpace(transporte.Compania))
+                throw new ArgumentException("La compania es obligatoria. ");
+            if (transporte.Tipo.Length > 50)
+                throw new ArgumentException("El tipo no puede tener más de 50 caracteres.");
+            if (transporte.Compania.Length > 100)
+                throw new ArgumentException("La compania no puede tener más de 100 caracteres.");
+
+
+        }
+        public static void SonLosDatosDeReservaValidos(Reserva reserva)
+        {
+            if (reserva.IdCliente <= 0)
+                throw new ArgumentException("ID de cliente inválido.");
+
+            if (reserva.IdDestino <= 0)
+                throw new ArgumentException("ID de destino inválido.");
+
+            if (reserva.IdTransporte <= 0)
+                throw new ArgumentException("ID de transporte inválido.");
+
+            if (reserva.CantidadPersonas <= 0)
+                throw new ArgumentException("La cantidad de personas debe ser mayor a 0.");
+
+            if (reserva.FechaReserva < DateTime.Today)
+                throw new ArgumentException("La fecha de reserva no puede ser en el pasado.");
+        }
     }
 }

@@ -8,6 +8,7 @@
         public int IdTransporte { get; set; }
         public DateTime FechaReserva { get; set; }
         public int CantidadPersonas { get; set; }
-        public decimal Total { get; set; }
+        public decimal Total { get; set; } // solo lectura desde DB
+
     }
 }

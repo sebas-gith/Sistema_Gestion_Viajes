@@ -21,11 +21,12 @@ class Program
                        break;
                 case 2:
                     {
+                        TransporteView.MostrarVista();
                         break;
                     }
                 case 3:
                     {
-                        
+                        ReservaView.MostrarVista();
                         break;
                     }
                 case 4:

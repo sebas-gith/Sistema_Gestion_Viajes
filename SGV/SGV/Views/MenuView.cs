@@ -15,7 +15,7 @@ namespace SGV.Views
 
             Console.CursorLeft = width/2-20;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write($"SGV(Sistema_de_gestion_de_viajes)--{vista}\n\n");
+            Console.Write($"Viaja Facil SVG--{vista}\n\n");
             Console.ForegroundColor= ConsoleColor.White;
 
         }
@@ -35,7 +35,7 @@ namespace SGV.Views
             }
             catch (Exception ex)
             {
-                Console.WriteLine("No te pases de listo :<");
+                Console.WriteLine("Ingresa una opcion valida:<");
                 opcion = -129;
             }
             
