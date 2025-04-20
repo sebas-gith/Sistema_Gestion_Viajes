@@ -208,7 +208,7 @@ namespace SGV.Views
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex);
+                        Console.WriteLine(ex.Message);
                     }
                 }
                 else if (opcionesCliente == 7)

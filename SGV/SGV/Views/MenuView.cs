@@ -15,7 +15,7 @@ namespace SGV.Views
 
             Console.CursorLeft = width/2-20;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write($"Viaja Facil SVG--{vista}\n\n");
+            Console.Write($"Viaja Facil SGV--{vista}\n\n");
             Console.ForegroundColor= ConsoleColor.White;
 
         }
@@ -23,10 +23,10 @@ namespace SGV.Views
         {
             MostrarLogo("Menu principal");
             int opcion = 0;
-            Console.WriteLine("1. Administrar clientes");
-            Console.WriteLine("2. Administrar transportes");
+            Console.WriteLine("1. Administrar Clientes");
+            Console.WriteLine("2. Administrar Transportes");
             Console.WriteLine("3. Administrar Reservas");
-            Console.WriteLine("4. Administrar Desitnos");
+            Console.WriteLine("4. Administrar Destinos");
             Console.WriteLine("5. Salir");
             Console.Write("¿Que quieres hacer hoy? ");
             try
